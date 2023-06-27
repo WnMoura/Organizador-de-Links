@@ -35,7 +35,9 @@ box-sizing: border-box;
 
 }
 
-body{background: var(--bg-url) no-repeat top center/cover;}
+body{background: var(--bg-url) no-repeat top center/cover;
+height: 100vh;
+}
 
 
 body * 
@@ -169,5 +171,18 @@ ul li a:hover{
 
 #social-links a:hover {
     background: var(--highlight-color);
+
+}
+
+/* media queries */
+
+@media (mim-widht:700px) {
+:root {
+    --bg-url:url(./assets/bg-desktop.jpg);
+}
+
+   .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+   }
 
 }
